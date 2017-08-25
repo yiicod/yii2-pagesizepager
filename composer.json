@@ -1,0 +1,30 @@
+{
+    "name": "yiicod/yii2-pagesizepager",
+    "description": "Perpager extension for Yii 2 framework",
+    "type": "yii2-extension",
+    "license": "New BSD License",
+    "authors": [
+        {
+            "name": "Alexey Orlov",
+            "email": "aaorlov88@gmail.com",
+            "homepage": "http://phpteamlib.apache.devplatform1.com/",
+            "role": "Developer"
+        },
+        {
+            "name": "Virchenko Maksim",
+            "email": "muslim1992@gmail.com",
+            "homepage": "http://phpteamlib.apache.devplatform1.com/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "yiisoft/yii2-mongodb": "2.*",
+        "liyunfang/yii2-widget-linkpager": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "yiicod\\pagesizepager\\": "/"
+        }
+    }
+}
