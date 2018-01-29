@@ -8,6 +8,7 @@ use yii\base\Exception;
 use yii\data\DataProviderInterface;
 use yii\helpers\Html;
 use yiicod\pagesizepager\helpers\Pager;
+use yiicod\pagesizepager\providers\ProviderInterface;
 
 /**
  * Class PageSizeLinkPager
@@ -49,6 +50,18 @@ class PageSizePager extends LinkPager
     protected $pageSize = null;
 
     /**
+     * @var ProviderInterface
+     */
+    protected $provider;
+
+    public function __construct(ProviderInterface $provider, array $config = [])
+    {
+        $this->provider = $provider;
+
+        parent::__construct($config);
+    }
+
+    /**
      * Run widget
      */
     public function init()
@@ -58,7 +71,8 @@ class PageSizePager extends LinkPager
         }
 
         Yii::$app->session->set(Pager::SESSION_PAGER_KEY . $this->gridIdentifier, $this->pagination->pageSizeParam);
-        $this->pageSize = Pager::getPageSize($this->gridIdentifier);
+
+        $this->pageSize = $this->provider->getPageSize($this->gridIdentifier);
     }
 
     /**
