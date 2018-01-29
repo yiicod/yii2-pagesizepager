@@ -7,6 +7,8 @@ use yii\helpers\ArrayHelper;
 
 abstract class ProviderAbstract implements ProviderInterface
 {
+    const SESSION_PAGER_KEY = 'session_pager';
+
     /**
      * Get page size
      *
