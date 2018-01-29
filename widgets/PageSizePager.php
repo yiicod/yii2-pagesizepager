@@ -45,9 +45,9 @@ class PageSizePager extends LinkPager
     /**
      * Current page size
      *
-     * @var null
+     * @var int
      */
-    protected $pageSize = null;
+    protected $pageSize;
 
     /**
      * @var ProviderInterface

@@ -4,6 +4,7 @@ namespace yiicod\pagesizepager\providers;
 
 use Yii;
 use yii\helpers\ArrayHelper;
+use yii\helpers\FileHelper;
 use yii\helpers\Json;
 
 /**
@@ -80,7 +81,7 @@ class FileProvider extends ProviderAbstract
     protected function getStorageFilePath(): string
     {
         if (false === is_dir(Yii::getAlias($this->dir))) {
-            @mkdir(Yii::getAlias($this->dir), 0755, true);
+            FileHelper::createDirectory(Yii::getAlias($this->dir), 0755, true);
         }
 
         return Yii::getAlias($this->dir) . DIRECTORY_SEPARATOR . 'yii_page_size.bin';
