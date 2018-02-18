@@ -1,13 +1,12 @@
-Widget provides saving grid page size
-=====================================
+Yii widget provides saving grid page size
+=========================================
 
 Provides functionality to add page size pager for any grid and save chosen value in file storage. 
 This is liyunfang\yii2-widget-linkpager fork.
 
 [![Latest Stable Version](https://poser.pugx.org/yiicod/yii2-pagesizepager/v/stable)](https://packagist.org/packages/yiicod/yii2-pagesizepager) [![Total Downloads](https://poser.pugx.org/yiicod/yii2-pagesizepager/downloads)](https://packagist.org/packages/yiicod/yii2-pagesizepager) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/yiicod/yii2-pagesizepager/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/yiicod/yii2-pagesizepager/?branch=master)[![Code Climate](https://codeclimate.com/github/yiicod/yii2-pagesizepager/badges/gpa.svg)](https://codeclimate.com/github/yiicod/yii2-pagesizepager)
 
-Usage
------
+#### Usage
 
 You can choose exists provider:
 - FileProvider

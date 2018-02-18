@@ -15,6 +15,7 @@ use yiicod\pagesizepager\providers\ProviderInterface;
  * Class PageSizeLinkPager
  * Pager for grid with saving pagers in session
  *
+ * @author Orlov Aleksey <aaorlov88@gmail.com>
  * @author Virchenko Maksim <muslim1992@gmail.com>
  *
  * @package yiicod\perpager\widgets

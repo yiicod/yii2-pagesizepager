@@ -5,6 +5,12 @@ namespace yiicod\pagesizepager\providers;
 use Yii;
 use yii\mongodb\Query;
 
+/**
+ * Class MongoProvider
+ *
+ * @author Orlov Aleksey <aaorlov88@gmail.com>
+ * @package yiicod\pagesizepager\providers
+ */
 class MongoProvider extends ProviderAbstract
 {
     /**

@@ -10,6 +10,7 @@ use yii\helpers\Json;
 /**
  * Class FileProvider
  *
+ * @author Orlov Aleksey <aaorlov88@gmail.com>
  * @package yiicod\base\traits
  */
 class FileProvider extends ProviderAbstract

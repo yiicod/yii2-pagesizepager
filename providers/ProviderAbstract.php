@@ -5,6 +5,12 @@ namespace yiicod\pagesizepager\providers;
 use Yii;
 use yii\helpers\ArrayHelper;
 
+/**
+ * Class ProviderAbstract
+ *
+ * @author Orlov Aleksey <aaorlov88@gmail.com>
+ * @package yiicod\pagesizepager\providers
+ */
 abstract class ProviderAbstract implements ProviderInterface
 {
     const SESSION_PAGER_KEY = 'session_pager';

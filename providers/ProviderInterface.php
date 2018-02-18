@@ -2,6 +2,12 @@
 
 namespace yiicod\pagesizepager\providers;
 
+/**
+ * Interface ProviderInterface
+ *
+ * @author Orlov Aleksey <aaorlov88@gmail.com>
+ * @package yiicod\pagesizepager\providers
+ */
 interface ProviderInterface
 {
     /**
